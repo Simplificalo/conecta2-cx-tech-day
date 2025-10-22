@@ -1175,7 +1175,7 @@ body {
 
 .carousel-nav-btn {
   position: absolute !important;
-  bottom: -80px !important;
+  bottom: -60px !important; /* CAMBIADO de -80px a -60px */
   top: auto !important;
   transform: none !important;
   z-index: 100 !important;
@@ -1183,30 +1183,34 @@ body {
 
 /* Desktop - botones centrados con separación */
 .carousel-nav-btn.prev {
-  left: calc(50% - 80px) !important; /* Más separación */
+  left: calc(50% - 80px) !important;
 }
 
 .carousel-nav-btn.next {
-  right: calc(50% - 80px) !important; /* Más separación */
+  right: calc(50% - 80px) !important;
 }
 
 /* Los indicadores más abajo */
 .carousel-indicators {
-  margin-top: 100px !important;
+  margin-top: 80px !important; /* CAMBIADO de 100px a 80px */
 }
 
 /* Móvil - corregir orden */
 @media (max-width: 768px) {
+  .carousel-nav-btn {
+    bottom: -50px !important; /* Más cerca en móvil */
+  }
+  
   .carousel-nav-btn.prev {
-    left: calc(50% - 60px) !important; /* Botón < a la izquierda */
+    left: calc(50% - 60px) !important;
   }
   
   .carousel-nav-btn.next {
-    left: calc(50% + 10px) !important; /* Botón > a la derecha */
+    left: calc(50% + 10px) !important;
     right: auto !important;
   }
   
   .carousel-indicators {
-    margin-top: 120px !important;
+    margin-top: 70px !important; /* CAMBIADO de 120px a 70px */
   }
 }
