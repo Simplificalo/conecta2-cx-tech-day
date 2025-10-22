@@ -510,6 +510,8 @@ body {
 .industries-carousel-container {
   width: 100%;
   max-width: 1200px;
+  overflow-x: hidden;  /* Agregar esto */
+  padding: 0 20px;     /* Agregar padding lateral */
   padding-bottom: 30px; 
 }
 
@@ -524,7 +526,7 @@ body {
   flex: 1;
   overflow: visible;  /* <-- Permitir que se vea el hover */
   position: relative;
-  padding: 20px 0;  /* <-- Agregar padding para el espacio del hover */
+  padding: 20px 10px;  /* Ajustar padding */
 }
 
 .carousel-cards-grid {
@@ -693,6 +695,40 @@ body {
 
 @media (max-width: 768px) {
 
+  .hero-section-fullscreen {
+    padding-top: 3rem;  /* Más espacio arriba */
+    min-height: 100vh;
+    height: auto;
+  }
+  
+  .hero-content-wrapper {
+    gap: 0.3rem;  /* Reducir espacios */
+  }
+  
+  /* Reducir márgenes del título */
+  .hero-title-large {
+    font-size: 1.8rem;
+    margin: 0.2rem 0;
+  }
+  
+  /* Reducir subtítulo */
+  .hero-subtitle-large {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  
+  /* Logo más pequeño */
+  .logo-image-huge {
+    width: 250px !important;
+  }
+  
+  /* Reducir margen del label */
+  .grid-label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
   /* Permitir scroll en móvil */
   .landing-container {
     max-height: none;
