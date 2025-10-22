@@ -552,7 +552,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
-  z-index: 10;
+  z-index: 100 !important;
   backdrop-filter: blur(10px);
 }
 
@@ -647,11 +647,11 @@ body {
   }
   
   .carousel-nav-btn.prev {
-    left: -50px;
+    left: 10px;
   }
   
   .carousel-nav-btn.next {
-    right: -50px;
+    right: 10px;
   }
 }
 
@@ -685,11 +685,11 @@ body {
   }
   
   .carousel-nav-btn.prev {
-    left: -40px;
+    left: 20px !important;
   }
   
   .carousel-nav-btn.next {
-    right: -40px;
+    right: 20px !important;
   }
 }
 
@@ -1166,4 +1166,47 @@ body {
 .submit-btn-modern svg {
   margin: 0 !important;
   vertical-align: middle !important;
+}
+
+/* BOTONES ABAJO - VERSIÓN FINAL CORREGIDA */
+.carousel-main-container {
+  position: relative !important;
+}
+
+.carousel-nav-btn {
+  position: absolute !important;
+  bottom: -80px !important;
+  top: auto !important;
+  transform: none !important;
+  z-index: 100 !important;
+}
+
+/* Desktop - botones centrados con separación */
+.carousel-nav-btn.prev {
+  left: calc(50% - 80px) !important; /* Más separación */
+}
+
+.carousel-nav-btn.next {
+  right: calc(50% - 80px) !important; /* Más separación */
+}
+
+/* Los indicadores más abajo */
+.carousel-indicators {
+  margin-top: 100px !important;
+}
+
+/* Móvil - corregir orden */
+@media (max-width: 768px) {
+  .carousel-nav-btn.prev {
+    left: calc(50% - 60px) !important; /* Botón < a la izquierda */
+  }
+  
+  .carousel-nav-btn.next {
+    left: calc(50% + 10px) !important; /* Botón > a la derecha */
+    right: auto !important;
+  }
+  
+  .carousel-indicators {
+    margin-top: 120px !important;
+  }
 }
