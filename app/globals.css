@@ -819,6 +819,11 @@ body {
   .carousel-nav-btn.next {
     order: 3;
   }
+
+  .modal-container {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
 }
 
 /* Particles */
@@ -1166,6 +1171,29 @@ body {
 .submit-btn-modern svg {
   margin: 0 !important;
   vertical-align: middle !important;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1400px) {
+  .hero-content-wrapper {
+    gap: 0.5rem !important;
+  }
+  
+  .logo-image-huge {
+    max-height: 150px !important;
+  }
+  
+  .industry-card-carousel {
+    height: 350px !important;
+  }
+  
+  .hero-title-large {
+    font-size: 3rem !important;
+  }
+  
+  .grid-label {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 /* BOTONES ABAJO - VERSIÓN FINAL CORREGIDA */
