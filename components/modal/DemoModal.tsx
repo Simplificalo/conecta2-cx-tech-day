@@ -10,8 +10,16 @@ interface DemoModalProps {
   preselectedIndustry?: string
 }
 
+type AssistantData = {
+  name: string
+  greeting: string
+  color: string
+  icon: string
+  questions: string[]
+}
+
 // Configuración de asistentes por industria
-const assistantConfig: Record<string, any> = {
+const assistantConfig: Record<string, AssistantData> = {
   salud: {
     name: 'Dra. Clara',
     greeting: 'Agenda tu consulta médica',

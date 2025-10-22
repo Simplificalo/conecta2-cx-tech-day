@@ -53,7 +53,6 @@ async function sendToHubSpot(leadData: LeadFormData) {
 // Trigger llamada en Conecta2
 async function triggerConecta2Call(leadData: LeadFormData) {
   const CONECTA2_API_KEY = process.env.CONECTA2_API_KEY
-  const CONECTA2_API_URL = process.env.CONECTA2_API_URL
   const CONECTA2_SCENARIO_ID = process.env.CONECTA2_SCENARIO_ID
 
   if (!CONECTA2_API_KEY) {
@@ -151,7 +150,7 @@ export async function POST(request: NextRequest) {
 }
 
 // GET endpoint para obtener estadísticas
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     // Aquí podrías obtener estadísticas reales de la base de datos
     const stats = {
