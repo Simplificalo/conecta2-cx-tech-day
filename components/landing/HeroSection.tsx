@@ -129,7 +129,7 @@ export default function HeroSection({ onCTAClick }: HeroSectionProps) {
         whileTap={{ scale: 0.95 }}
       >
         <a 
-          href="https://calendly.com/conecta2" // CAMBIA ESTE LINK
+          href="hhttps://cal.com/conecta2.ai/reunion-de-conexion-y-entendimiento" // CAMBIA ESTE LINK
           target="_blank"
           rel="noopener noreferrer"
           className="calendar-btn-link"
